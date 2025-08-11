@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "@/app/profile/submit-request/submit-request.css";
-import Navbar from "@/components/navbar/Navbar";
+import "./submit-request.css";
 import Container from "@/components/container/Container";
 import Footer from "@/components/footer/Footer";
 import Sidebar from "@/components/sidebar/Sidebar";
@@ -13,21 +12,9 @@ import TabMenu from "@/components/Tab/TabMenu/TabMenu";
 import TabContent from "@/components/Tab/TabMenu/TabContent/TabContent";
 import Input from "@/components/input/Input";
 import Image from "next/image";
+import Navbar from "@/components/navbar/Navbar";
 
 function Page() {
-  console.log(
-    Navbar,
-    Container,
-    Footer,
-    Sidebar,
-    Content,
-    Tab,
-    TabNav,
-    TabTitle,
-    TabMenu,
-    TabContent,
-    Input
-  );
   const [menuOpen, setMenuOpen] = useState(true);
   const handleToggle = () => {
     setMenuOpen(!menuOpen);
