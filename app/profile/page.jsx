@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 import "@/app/profile/profile.css";
 import Input from "@/components/input/Input";
 
-function page() {
+function Page() {
   useEffect(() => {
     const tabs = document.querySelectorAll(".tab-btn");
     const all_content = document.querySelectorAll(".tab-content");
@@ -148,4 +148,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
