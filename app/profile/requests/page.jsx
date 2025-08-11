@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Sidebar from "@/components/sidebar/Sidebar";
 import React, { useEffect, useState } from "react";
 import "@/app/profile/requests/requests.css";
-import Pagination from "@/components/pagination/pagination";
+import Pagination from "@/components/pagination/Pagination";
 import Input from "@/components/input/Input";
 
 function Page() {
