@@ -13,6 +13,7 @@ import TabMenu from "@/components/Tab/TabMenu/TabMenu";
 import TabContent from "@/components/Tab/TabMenu/TabContent/TabContent";
 import Input from "@/components/input/Input";
 import Dropdown from "@/components/dropdown/Dropdown";
+import Image from "next/image";
 
 function Page() {
   const [menuOpen, setMenuOpen] = useState(true);
@@ -56,7 +57,7 @@ function Page() {
                     <div className="card-row">
                       <button className="primary-btn">ثبت اولیه و ادامه</button>
                       <button className="secondary-btn">
-                        <img src="/img/submit.svg" alt="" />
+                        <Image src="/img/submit.svg" alt="submit" />
                         <p>مشاهده نحوه ی محاسبه ی کارمزد</p>
                       </button>
                     </div>
@@ -89,7 +90,7 @@ function Page() {
                     <div className="card-row">
                       <button className="primary-btn">ثبت اولیه و ادامه</button>
                       <button className="secondary-btn">
-                        <img src="/img/submit.svg" alt="" />
+                        <Image src="/img/submit.svg" alt="submit" />
                         <p>مشاهده نحوه ی محاسبه ی کارمزد</p>
                       </button>
                     </div>
@@ -123,7 +124,7 @@ function Page() {
                     <div className="card-row">
                       <button className="primary-btn">ثبت اولیه و ادامه</button>
                       <button className="secondary-btn">
-                        <img src="/img/submit.svg" alt="" />
+                        <Image src="/img/submit.svg" alt="submit" />
                         <p>مشاهده نحوه ی محاسبه ی کارمزد</p>
                       </button>
                     </div>
