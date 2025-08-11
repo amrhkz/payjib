@@ -9,10 +9,11 @@ function Familiarity() {
         <div className="right">
           <h1>آشنایی بیشتر با پی‌جیب</h1>
           <div id="78458804225" className="video">
-            <script
+            {/* <script
               type="text/JavaScript"
               src="https://www.aparat.com/embed/p49qpm4?data[rnddiv]=78458804225&data[responsive]=yes"
-            ></script>
+            ></script> */}
+            <p>video</p>
           </div>
         </div>
         <div className="left">
