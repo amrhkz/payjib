@@ -4,6 +4,7 @@ import Sidebar from "@/components/sidebar/Sidebar";
 import React, { useEffect } from "react";
 import "@/app/profile/dashboard/dashboard.css";
 import Input from "@/components/input/Input";
+import Image from "next/image";
 
 function Page() {
   useEffect(() => {
@@ -39,7 +40,7 @@ function Page() {
             </div>
             <div className="info-menu menu tab-content active">
               <div className="title">
-                <img src="/img/requests.svg" alt="" />
+                <Image src={"/img/requests.svg"} />
                 <h3>تعداد درخواست‌ها</h3>
               </div>
               <div className="row">
@@ -48,7 +49,8 @@ function Page() {
                 <i class="bx bx-chevron-left bx-sm"></i>
               </div>
               <div className="title">
-                <img src="/img/offers.svg" alt="" />
+                <Image src={"/img/offers.svg"} />
+               
                 <h3>تعداد پیشنهادها</h3>
               </div>
               <div className="row">
@@ -62,7 +64,7 @@ function Page() {
                 <i class="bx bx-chevron-left bx-sm"></i>
               </div>
               <div className="title">
-                <img src="/img/transactions.svg" alt="" />
+                <Image src={"/img/transactions.svg"} />
                 <h3>تعداد تراکنش‌ها</h3>
               </div>
               <div className="row">

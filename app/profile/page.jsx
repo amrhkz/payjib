@@ -4,6 +4,7 @@ import Sidebar from "@/components/sidebar/Sidebar";
 import React, { useEffect } from "react";
 import "@/app/profile/profile.css";
 import Input from "@/components/input/Input";
+import Image from "next/image";
 
 function Page() {
   useEffect(() => {
@@ -87,7 +88,7 @@ function Page() {
                   <div className="row-2">
                     <div className="col title">مدرک هویتی:</div>
                     <div className="col">
-                      <img src="" alt="" />
+                      <Image />
                     </div>
                   </div>
                   <div className="row-2">
@@ -101,7 +102,7 @@ function Page() {
                       تصویر سلفی همراه با مدرک شناسایی در کنار صورت:
                     </div>
                     <div className="col">
-                      <img src="" alt="" />
+                      <Image />
                     </div>
                   </div>
                   <div className="row-2">
@@ -136,7 +137,7 @@ function Page() {
                   <Input placeHolder={"ایمیل مخاطب خود را وارد کنید"} />
                   <button>
                     <p>ارسال لینک به ایمیل</p>
-                    <img src="/img/send-email.svg" alt="" />
+                    <Image src={"/img/send-email.svg"} />
                   </button>
                 </div>
               </div>
