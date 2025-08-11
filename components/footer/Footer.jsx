@@ -1,5 +1,6 @@
 import React from "react";
 import "@/components/footer/footer.css";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="main">
-            <img src="/img/logo.svg" alt="" />
+            <Image src="/img/logo.svg" alt="logo" />
             <p>
               در پی‌جیب می‌تونید مبلغ مورد نظرتون رو به سرعت و با کم‌ترین
               کارمزد، از ایران به اروپا، استراليا، كانادا و تركيه یا بالعکس، با

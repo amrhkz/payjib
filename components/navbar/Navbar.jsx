@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "@/components/navbar/navbar.css";
 import Link from "next/link";
 import MobileMenu from "../mobile-menu/MobileMenu";
+import Image from "next/image";
 
 function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -47,7 +48,7 @@ function Navbar() {
       <div className="nav-container">
         <div className="right">
           <Link href={"/"}>
-            <img src="/img/logo.svg" alt="" />
+            <Image src="/img/logo.svg" alt="logo" />
           </Link>
           <ul className="nav-menu">
             <Link href={"/"}>خانه</Link>
@@ -66,7 +67,7 @@ function Navbar() {
             <div className={`btn ${mobileMenu ? "rotate" : ""}`}>
               <i className="bx bx-chevron-down bx-sm"></i>
               <p>امیرحسین کریم زاده</p>
-              <img src="/img/smile.svg" alt="" />
+              <Image src="/img/smile.svg" alt="smile" />
             </div>
             <div className={`drop-menu ${mobileMenu ? "open" : ""}`}>
               <Link href={"/profile"}>پروفایل</Link>

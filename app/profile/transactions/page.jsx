@@ -5,8 +5,9 @@ import Navbar from "@/components/navbar/Navbar";
 import Sidebar from "@/components/sidebar/Sidebar";
 import Pagination from "@/components/pagination/Pagination";
 import Input from "@/components/input/Input";
+import Image from "next/image";
 
-function page() {
+function Page() {
   const [isSearchMenuOpen, setIsSearchMenuOpen] = useState(false);
   useEffect(() => {
     const tabs = document.querySelectorAll(".tab-btn");
@@ -79,7 +80,7 @@ function page() {
               <div className="row">
                 <button>اعمال فیلترها و مشاهده تغییرات</button>
                 <button className="delete-btn">
-                  <img src="/img/delete.svg" alt="" />
+                  <Image src="/img/delete.svg" alt="delete" />
                   <p>حذف فیلترها</p>
                 </button>
               </div>
@@ -106,4 +107,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
