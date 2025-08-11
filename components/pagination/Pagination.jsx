@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "@/components/pagination/pagination.css";
+import "./pagination.css";
 import Card from "../card/Card";
 
 const mockData = [
