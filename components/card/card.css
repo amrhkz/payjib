@@ -1,0 +1,91 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fff;
+  padding: 32px 32px 24px;
+  border-radius: 12px;
+}
+.card .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .row .req-id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ebeff5;
+  color: #2d5396;
+  height: 40px;
+  border-radius: 12px;
+  padding: 0 20px;
+}
+.card .sell-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  background: #2d5396;
+  color: #fff;
+  cursor: pointer;
+}
+.card > .sell-btn {
+  display: none;
+}
+.card .row .country {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.card .row .country img {
+  width: 25px;
+}
+.card .row > .date {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+}
+.card .row > .date .sep {
+  height: 60%;
+  width: 2px;
+  background: #e2e2e2;
+}
+.card .row-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+}
+.card hr {
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 960px) {
+  .card .row .item .sell-btn {
+    display: none;
+  }
+  .card .sell-btn {
+    display: block;
+  }
+  .card .item.req-id {
+    width: 100%;
+  }
+  .card .item.req-id p {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .card .row.col {
+    flex-direction: column;
+    align-items: start;
+  }
+  .card .row.col .item.date {
+    width: 100%;
+  }
+}

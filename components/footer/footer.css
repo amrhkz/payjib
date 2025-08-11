@@ -1,0 +1,71 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1088px;
+  gap: 48px;
+}
+.footer .container .footer-content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 24px;
+}
+.footer .container .footer-content .main,
+.footer .container .footer-content .menu,
+.footer .container .footer-content .social {
+  max-width: 33.33%;
+  padding: 12px;
+  width: 100%;
+}
+.footer .container .footer-content .main p{
+  text-align: justify;
+}
+.footer .container .footer-content .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer .container .footer-content .menu .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .container .footer-content .social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.footer .container .footer-content .social .icons{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer .container .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  border-top: 1px solid #e2e2e2;
+}
+@media only screen and (max-width: 960px) {
+  .footer .container .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .container .footer-content .main,
+.footer .container .footer-content .menu,
+.footer .container .footer-content .social {
+  max-width: 100%;
+  padding: 12px;
+  width: 100%;
+}
+}

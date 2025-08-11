@@ -1,0 +1,86 @@
+.fee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fee .container .content {
+  background-color: #fff;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 92px;
+  width: 100%;
+}
+.fee .container .content > .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fee .container .content > .right h1 {
+  max-width: 260px;
+  color: var(--primary-color);
+}
+.fee .container .content > .right button {
+  background: none;
+  border: 2px solid var(--primary-color);
+  width: max-content;
+  padding: 0 30px;
+  font-size: 22px;
+  border-radius: 16px;
+  height: 64px;
+}
+.fee .container .content > .left {
+  width: 100%;
+  max-width: 45%;
+}
+.fee .container .content > .left .chart {
+  width: 100%;
+  border: 1px solid #abbad5;
+  background: var(--body-color);
+  padding: 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.fee .container .content > .left .chart .tag-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 38px;
+  height: 48px;
+}
+.fee .container .content > .left .chart .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0 38px;
+  height: 48px;
+}
+@media only screen and (max-width: 960px) {
+  .fee .container .content {
+    flex-direction: column;
+    gap: 24px;
+    padding: 36px;
+  }
+  .fee .container .content > .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .fee .container .content > .right h1 {
+    max-width: 100%;
+    font-size: 22px;
+  }
+  .fee .container .content > .right .currencyBtn {
+    font-size: 16px;
+    padding: 0 12px;
+    height: 50px;
+  }
+  .fee .container .content > .left {
+    max-width: 100%;
+  }
+}

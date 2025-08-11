@@ -1,0 +1,46 @@
+.mobile-menu {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  .mobile-menu {
+    display: block;
+    width: 100%;
+  }
+  .mobile-menu .mobile-content {
+    max-height: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 20000;
+    transition: all 0.5s;
+  }
+  .mobile-menu .mobile-content.active {
+    max-height: 1000px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 20000;
+    transition: all 0.5s;
+  }
+  .mobile-menu .mobile-content.active .close-btn {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+  }
+}

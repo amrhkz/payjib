@@ -1,0 +1,28 @@
+.tab-content .row {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tab-content .row span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ebeff5;
+  border-radius: 12px;
+  width: 45px;
+  height: 45px;
+}
+
+.tab-content .row .item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-content .row .item .col {
+  width: 100%;
+  padding: 12px;
+}

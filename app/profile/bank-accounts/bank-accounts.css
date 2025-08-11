@@ -1,0 +1,147 @@
+.bank-accounts {
+  display: flex;
+  justify-content: center;
+}
+.bank-accounts .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  width: 100%;
+  max-width: 1088px;
+}
+.bank-accounts .container > .content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 24px;
+}
+.bank-accounts .container > .content .tab {
+  display: flex;
+  align-items: center;
+}
+.bank-accounts .container > .content .tab > .left button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  height: 42px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: none;
+  background: #fff;
+  color: #2d5396;
+  cursor: pointer;
+}
+.bank-accounts .container > .content .tab .item {
+  padding: 12px;
+  border-radius: 12px 12px 0 0;
+  border: none;
+  border-bottom: 1px solid #2d5396;
+  color: #2d5396;
+  cursor: pointer;
+}
+.bank-accounts .container > .content .tab .item.active {
+  background: #2d5396;
+  color: #fff;
+}
+.bank-accounts .container > .content .search-menu {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.bank-accounts .container > .content .search-menu.open {
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+}
+.bank-accounts .container > .content .search-menu.open input {
+  width: 50%;
+}
+.bank-accounts .container > .content .menu {
+  display: none;
+}
+.bank-accounts .container > .content .menu.active {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.bank-accounts .container > .content .menu > .row {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.bank-accounts .container > .content .menu .row span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ebeff5;
+  border-radius: 12px;
+  width: 45px;
+  height: 45px;
+}
+.bank-accounts .container > .content .menu .row .item {
+  display: flex;
+  justify-content: space-between;
+}
+.bank-accounts .container > .content .menu .row .item .col {
+  width: 100%;
+  padding: 12px;
+}
+.bank-accounts .container > .content .refer-menu .row {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.bank-accounts .container > .content .refer-menu .row p {
+  width: 100%;
+}
+.bank-accounts .container > .content .refer-menu .row .copy {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 12px;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #e2e2e2;
+  width: 100%;
+}
+.bank-accounts .container > .content .refer-menu .row .copy hr {
+  width: 100%;
+}
+.bank-accounts .container > .content .refer-menu .row .copy button {
+  height: 48px;
+  padding: 0 24px;
+  background: none;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+}
+.bank-accounts .container > .content .refer-menu .row .email {
+  display: flex;
+  gap: 12px;
+  border-radius: 12px;
+  padding: 32px;
+  border: 1px solid #e2e2e2;
+  width: 100%;
+}
+.bank-accounts .container > .content .refer-menu .row .email input {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 0 24px;
+}
+.bank-accounts .container > .content .refer-menu .row .email button {
+  height: 48px;
+  min-width: max-content;
+  padding: 0 24px;
+  border-radius: 12px;
+  background: none;
+  border: 2px solid #2d5396;
+  color: #2d5396;
+}

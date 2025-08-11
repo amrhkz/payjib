@@ -1,0 +1,29 @@
+.about {
+  background: url(./about-background.svg) no-repeat;
+  background-color: #fff;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+.about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 1088px;
+  padding: 24px;
+}
+.about .container .title {
+  font-size: 28px;
+}
+.about .container .description {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 720px;
+  font-size: 18px;
+}
+.about .container .description p {
+  text-align: justify;
+}

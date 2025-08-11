@@ -1,0 +1,11 @@
+.tab-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}

@@ -1,0 +1,79 @@
+/* ------------------------------------------------------------ Public Styles */
+@font-face {
+  font-family: "IranSans";
+  src: url("/font/IranSans/woff/IRANSansWeb.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IranSansNum";
+  src: url("/font/IranSans/woff/IRANSansWeb(FaNum).woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "IranSansNum";
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+:root {
+  --body-color: #EBEFF5;
+  --sidebar-color: #F5F6FB;
+  --primary-color: #1b325a;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --profit-green: #17c785;
+  --loss-red: #eb3843;
+  --border-color: #323546;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+body.dark {
+  --body-color: #161d31;
+  --sidebar-color: #283046;
+  --primary-color: #9767e1;
+  --primary-color-light: #353e52;
+  --toggle-color: #fff;
+  --text-color: #fff;
+}
+
+body {
+  background: var(--body-color);
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+/* ------------------------------------------------------------ Public Styles */

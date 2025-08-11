@@ -1,0 +1,38 @@
+.terms {
+  background-color: rgb(245, 247, 250);
+  display: flex;
+  justify-content: center;
+}
+.terms .container {
+  width: 100%;
+  max-width: 1088px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 24px;
+}
+.terms .container > .right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  width: 100%;
+  max-width: 25%;
+  border-radius: 12px;
+}
+.terms .container > .right a {
+  font-size: 1rem;
+  padding: 6px 16px;
+  cursor: pointer;
+}
+.terms .container > .left {
+  background: #fff;
+  width: 100%;
+  padding: 28px;
+  border-radius: 12px;
+}
+.terms .container > .left p{
+  font-size: 18px;
+  line-height: 34px;
+  text-align: justify;
+}

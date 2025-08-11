@@ -1,0 +1,48 @@
+.request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.request-item {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+}
+.request-list .table-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.request-list .table-bottom .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.request-list .table-bottom .pagination button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+}
+.page-number {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: red;
+  cursor: pointer;
+}
+
+.page-number.active {
+  background: #2d5396;
+  color: #fff;
+  border-color: #2d5396;
+}
+
+.page-number[disabled] {
+  cursor: default;
+  background: none;
+  border: none;
+}

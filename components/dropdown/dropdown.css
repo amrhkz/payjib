@@ -1,0 +1,47 @@
+.pickCurrency {
+  position: relative;
+  width: max-content;
+}
+
+.pickCurrency .currencyBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  cursor: pointer;
+  background: none;
+  border: 2px solid var(--primary-color);
+  padding: 0 30px;
+  font-size: 22px;
+  border-radius: 16px;
+  height: 64px;
+}
+
+.pickCurrency .currencies {
+  display: none;
+}
+
+.pickCurrency .currencies.open {
+  display: block;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.pickCurrency .currencies .currency {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pickCurrency .currencies .currency:hover {
+  background: #1a325b;
+  color: #fff;
+}

@@ -1,0 +1,61 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register .content {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.register .content h1 {
+  font-size: 18px;
+  color: #1b325a;
+}
+.register .content form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.register .content form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #d5ddea;
+  outline: none;
+}
+.register .content form .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.register .content form .row .remember {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.register .content form .row .remember .checkbox {
+  background: none;
+  border: 2px solid var(--primary-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+.register .content .register-btn {
+  border: 2px solid #2d5396;
+  background: #2d5396;
+  color: #fff;
+  width: 100%;
+  border-radius: 12px;
+  height: 48px;
+  cursor: pointer;
+}
+.register .content a {
+  align-self: center;
+}

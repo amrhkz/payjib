@@ -1,0 +1,69 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .content {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.login .content .google-login {
+  border: 2px solid #2d5396;
+  background: none;
+  width: 100%;
+  border-radius: 12px;
+  height: 48px;
+  cursor: pointer;
+}
+.login .content h1 {
+  font-size: 18px;
+  color: #1b325a;
+}
+.login .content form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.login .content form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #d5ddea;
+  outline: none;
+}
+.login .content form .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login .content form .row .remember {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.login .content form .row .remember .checkbox {
+  background: none;
+  border: 2px solid var(--primary-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+.login .content .login-btn {
+  border: 2px solid #2d5396;
+  background: #2d5396;
+  color: #fff;
+  width: 100%;
+  border-radius: 12px;
+  height: 48px;
+  cursor: pointer;
+}
+.login .content a {
+  align-self: center;
+}
