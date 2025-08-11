@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import Container from "../container/Container";
+import Image from "next/image";
 
 function UserCarousel() {
   const swiperRef = useRef(null);
@@ -44,7 +45,7 @@ function UserCarousel() {
                 ارز رو برای مایی که خارج از ایران هستیم آسونتر کردند.
               </div>
               <div className="author">
-                <img src="./img/woman.svg" alt="" />
+                <Image src="./img/woman.svg" alt="" />
                 <p>بهاره از سوئد</p>
               </div>
             </div>
@@ -63,7 +64,7 @@ function UserCarousel() {
                 ساعتی در دسترس بودید و پاسخگوی تمام سوالاتم بودید🌺
               </div>
               <div className="author">
-                <img src="./img/woman.svg" alt="" />
+                <Image src="./img/woman.svg" alt="" />
                 <p>نازنین از آلمان</p>
               </div>
             </div>
@@ -84,7 +85,7 @@ function UserCarousel() {
                 کرده و تبادل بین‌المللی ارز خیلی خیلی راحت‌تر شده.
               </div>
               <div className="author">
-                <img src="./img/woman.svg" alt="" />
+                <Image src="./img/woman.svg" alt="" />
                 <p>حمیدرضا از ایران</p>
               </div>
             </div>
@@ -97,7 +98,7 @@ function UserCarousel() {
                 ارز رو برای مایی که خارج از ایران هستیم آسونتر کردند.
               </div>
               <div className="author">
-                <img src="./img/woman.svg" alt="" />
+                <Image src="./img/woman.svg" alt="" />
                 <p>بهاره از سوئد</p>
               </div>
             </div>
@@ -110,7 +111,7 @@ function UserCarousel() {
                 ارز رو برای مایی که خارج از ایران هستیم آسونتر کردند.
               </div>
               <div className="author">
-                <img src="./img/woman.svg" alt="" />
+                <Image src="./img/woman.svg" alt="" />
                 <p>بهاره از سوئد</p>
               </div>
             </div>
@@ -123,7 +124,7 @@ function UserCarousel() {
                 ارز رو برای مایی که خارج از ایران هستیم آسونتر کردند.
               </div>
               <div className="author">
-                <img src="./img/woman.svg" alt="" />
+                <Image src="./img/woman.svg" alt="" />
                 <p>بهاره از سوئد</p>
               </div>
             </div>

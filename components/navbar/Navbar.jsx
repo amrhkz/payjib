@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import "@/components/navbar/navbar.css";
 import Link from "next/link";
 import MobileMenu from "../mobile-menu/MobileMenu";
@@ -22,26 +22,26 @@ function Navbar() {
     }
   };
 
-  const controlNavbar = () => {
-    if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
-        setShowNavbar(false);
-      } else {
-        setShowNavbar(true);
-      }
-      setLastScrollY(window.scrollY);
+  const controlNavbar = useCallback(() => {
+  if (typeof window !== "undefined") {
+    if (window.scrollY > lastScrollY) {
+      setShowNavbar(false);
+    } else {
+      setShowNavbar(true);
     }
-  };
+    setLastScrollY(window.scrollY);
+  }
+}, [lastScrollY]);
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    window.addEventListener("scroll", controlNavbar);
+  document.addEventListener("mousedown", handleClickOutside);
+  window.addEventListener("scroll", controlNavbar);
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-      window.removeEventListener("scroll", controlNavbar);
-    };
-  }, [lastScrollY]);
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+    window.removeEventListener("scroll", controlNavbar);
+  };
+}, [controlNavbar]);
 
   return (
     <div className={`navbar ${showNavbar ? "visible" : "hidden"}`}>
