@@ -1,9 +1,9 @@
 "use client";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import "@/components/navbar/navbar.css";
+import "./navbar.css";
 import Link from "next/link";
-import MobileMenu from "../mobile-menu/MobileMenu";
 import Image from "next/image";
+import MobileMenu from "../mobile-menu/MobileMenu";
 
 function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -48,7 +48,7 @@ function Navbar() {
       <div className="nav-container">
         <div className="right">
           <Link href={"/"}>
-            <Image src="/img/logo.svg" alt="logo" />
+            <Image src="/img/logo.svg" alt="logo" width={200} height={100}/>
           </Link>
           <ul className="nav-menu">
             <Link href={"/"}>خانه</Link>
@@ -67,7 +67,7 @@ function Navbar() {
             <div className={`btn ${mobileMenu ? "rotate" : ""}`}>
               <i className="bx bx-chevron-down bx-sm"></i>
               <p>امیرحسین کریم زاده</p>
-              <Image src="/img/smile.svg" alt="smile" />
+              <Image src="/img/smile.svg" alt="smile" width={25} height={25}/>
             </div>
             <div className={`drop-menu ${mobileMenu ? "open" : ""}`}>
               <Link href={"/profile"}>پروفایل</Link>

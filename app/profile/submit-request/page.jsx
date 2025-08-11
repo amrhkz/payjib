@@ -15,6 +15,19 @@ import Input from "@/components/input/Input";
 import Image from "next/image";
 
 function Page() {
+  console.log(
+    Navbar,
+    Container,
+    Footer,
+    Sidebar,
+    Content,
+    Tab,
+    TabNav,
+    TabTitle,
+    TabMenu,
+    TabContent,
+    Input
+  );
   const [menuOpen, setMenuOpen] = useState(true);
   const handleToggle = () => {
     setMenuOpen(!menuOpen);
