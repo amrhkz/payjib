@@ -12,7 +12,6 @@ import TabTitle from "@/components/Tab/TabNav/TabTitle/TabTitle";
 import TabMenu from "@/components/Tab/TabMenu/TabMenu";
 import TabContent from "@/components/Tab/TabMenu/TabContent/TabContent";
 import Input from "@/components/input/Input";
-import Dropdown from "@/components/dropdown/Dropdown";
 import Image from "next/image";
 
 function Page() {
