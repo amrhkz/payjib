@@ -1,5 +1,6 @@
 import React from "react";
 import "@/components/card/card.css";
+import Image from "next/image";
 
 function Card(props) {
   return (
@@ -24,7 +25,7 @@ function Card(props) {
         <div className="item country">
           <p>از {props.country}</p>
           <div className="flag">
-            <img src={`${props.flag}`} alt="" />
+            <Image src={`${props.flag}`} alt="" />
           </div>
         </div>
         <div className="item date">

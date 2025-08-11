@@ -88,7 +88,7 @@ function Page() {
                   <div className="row-2">
                     <div className="col title">مدرک هویتی:</div>
                     <div className="col">
-                      <Image alt="id"/>
+                      <Image alt="id" />
                     </div>
                   </div>
                   <div className="row-2">
@@ -102,7 +102,7 @@ function Page() {
                       تصویر سلفی همراه با مدرک شناسایی در کنار صورت:
                     </div>
                     <div className="col">
-                      <Image alt="selfie"/>
+                      <Image alt="selfie" />
                     </div>
                   </div>
                   <div className="row-2">
@@ -126,8 +126,8 @@ function Page() {
                   <hr />
                   <button>
                     <p>کپی کردن لینک</p>
-             
-                    <Image src={"/img/copy.svg"} alt="copy"/>
+
+                    <Image src={"/img/copy.svg"} alt="copy" />
                   </button>
                 </div>
                 <p>
@@ -138,7 +138,7 @@ function Page() {
                   <Input placeHolder={"ایمیل مخاطب خود را وارد کنید"} />
                   <button>
                     <p>ارسال لینک به ایمیل</p>
-                    <Image src={"/img/send-email.svg"} alt="send-email"/>
+                    <Image src={"/img/send-email.svg"} alt="send-email" />
                   </button>
                 </div>
               </div>
