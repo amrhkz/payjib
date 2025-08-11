@@ -5,6 +5,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "@/app/profile/register-account/register-account.css";
 import Link from "next/link";
 import Input from "@/components/input/Input";
+import Image from "next/image";
 
 function Page() {
   const [isTermsChecked, setIsTermsChecked] = useState(false);
@@ -94,7 +95,7 @@ function Page() {
                   </div>
                   <div className="bottom">
                     {idCardPreview && (
-                      <img src={idCardPreview} alt="ID Card Preview" />
+                      <Image src={idCardPreview} alt="ID Card Preview" />
                     )}
                   </div>
                 </div>
@@ -127,7 +128,7 @@ function Page() {
                   </div>
                   <div className="bottom">
                     {selfiePreview && (
-                      <img src={selfiePreview} alt="Selfie Preview" />
+                      <Image src={selfiePreview} alt="Selfie Preview" />
                     )}
                   </div>
                 </div>

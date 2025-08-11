@@ -40,7 +40,7 @@ function Page() {
             </div>
             <div className="info-menu menu tab-content active">
               <div className="title">
-                <Image src={"/img/requests.svg"} />
+                <Image src={"/img/requests.svg"} alt="requests"/>
                 <h3>تعداد درخواست‌ها</h3>
               </div>
               <div className="row">
@@ -49,7 +49,7 @@ function Page() {
                 <i class="bx bx-chevron-left bx-sm"></i>
               </div>
               <div className="title">
-                <Image src={"/img/offers.svg"} />
+                <Image src={"/img/offers.svg"} alt="offers"/>
                
                 <h3>تعداد پیشنهادها</h3>
               </div>
@@ -64,7 +64,7 @@ function Page() {
                 <i class="bx bx-chevron-left bx-sm"></i>
               </div>
               <div className="title">
-                <Image src={"/img/transactions.svg"} />
+                <Image src={"/img/transactions.svg"} alt="transactions"/>
                 <h3>تعداد تراکنش‌ها</h3>
               </div>
               <div className="row">
