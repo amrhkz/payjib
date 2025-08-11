@@ -5,7 +5,7 @@ import Sidebar from "@/components/sidebar/Sidebar";
 import Navbar from "@/components/navbar/Navbar";
 import Pagination from "@/components/pagination/Pagination";
 
-function page() {
+function Page() {
   const [isSearchMenuOpen, setIsSearchMenuOpen] = useState(false);
   useEffect(() => {
     const tabs = document.querySelectorAll(".tab-btn");
@@ -73,4 +73,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
