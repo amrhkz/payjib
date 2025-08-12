@@ -23,9 +23,9 @@ function Page() {
     <>
       <Navbar />
       <Container>
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Content>
-          <Tab>
+          {/* <Tab>
             <TabNav>
               <TabTitle>خرید ارز</TabTitle>
               <TabTitle>فروش ارز</TabTitle>
@@ -131,7 +131,7 @@ function Page() {
                 </div>
               </TabContent>
             </TabMenu>
-          </Tab>
+          </Tab> */}
         </Content>
       </Container>
       <Footer />
