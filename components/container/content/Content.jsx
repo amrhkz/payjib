@@ -1,5 +1,5 @@
 import React from "react";
-import "@/components/container/content/Content.css";
+import "./Content.css";
 
 function Content({ children }) {
   return <div className="content">{children}</div>;

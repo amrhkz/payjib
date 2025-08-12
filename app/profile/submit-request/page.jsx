@@ -10,9 +10,9 @@ import TabNav from "@/components/Tab/TabNav/TabNav";
 import TabTitle from "@/components/Tab/TabNav/TabTitle/TabTitle";
 import TabMenu from "@/components/Tab/TabMenu/TabMenu";
 import TabContent from "@/components/Tab/TabMenu/TabContent/TabContent";
-import Input from "@/components/input/Input";
 import Image from "next/image";
 import Navbar from "@/components/navbar/Navbar";
+import Input from "@/components/input/Input";
 
 function Page() {
   const [menuOpen, setMenuOpen] = useState(true);
@@ -56,7 +56,7 @@ function Page() {
                     <div className="card-row">
                       <button className="primary-btn">ثبت اولیه و ادامه</button>
                       <button className="secondary-btn">
-                        <Image src="/img/submit.svg" alt="submit" />
+                        <Image src="/img/submit.svg" alt="submit" width={20} height={20}/>
                         <p>مشاهده نحوه ی محاسبه ی کارمزد</p>
                       </button>
                     </div>
@@ -70,7 +70,7 @@ function Page() {
                       <p>
                         فروش ارز در خارج از کشور و دریافت معادل تومانی در ایران
                       </p>
-                      <i class="bx bx-chevron-up bx-sm"></i>
+                      <i className="bx bx-chevron-up bx-sm"></i>
                     </div>
                   </div>
                   <div className="bottom">
@@ -89,7 +89,7 @@ function Page() {
                     <div className="card-row">
                       <button className="primary-btn">ثبت اولیه و ادامه</button>
                       <button className="secondary-btn">
-                        <Image src="/img/submit.svg" alt="submit" />
+                        <Image src="/img/submit.svg" alt="submit" width={20} height={20}/>
                         <p>مشاهده نحوه ی محاسبه ی کارمزد</p>
                       </button>
                     </div>
@@ -104,7 +104,7 @@ function Page() {
                         فروش ارز در خارج از کشور و واریز معادل تومانی آن به
                         خیریه های داخل ایران
                       </p>
-                      <i class="bx bx-chevron-up bx-sm"></i>
+                      <i className="bx bx-chevron-up bx-sm"></i>
                     </div>
                   </div>
                   <div className="bottom">
@@ -123,7 +123,7 @@ function Page() {
                     <div className="card-row">
                       <button className="primary-btn">ثبت اولیه و ادامه</button>
                       <button className="secondary-btn">
-                        <Image src="/img/submit.svg" alt="submit" />
+                        <Image src="/img/submit.svg" alt="submit" width={20} height={20}/>
                         <p>مشاهده نحوه ی محاسبه ی کارمزد</p>
                       </button>
                     </div>
@@ -140,3 +140,6 @@ function Page() {
 }
 
 export default Page;
+
+
+
